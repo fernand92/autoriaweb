@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernando - Quem sou eu</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Fundo suave e harmônico */
+        body {
+            background: linear-gradient(180deg, #eef4f7, #f6f3ee);
+            background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2b2b2b;
+            scroll-behavior: smooth;
+            animation: fadeIn 1s ease-in;
+        }
+
+        /* Animações */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pop {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+            100% { transform: scale(1); }
+        }
+
+        /* Cabeçalhos */
+        h1, h2 {
+            color: #3a7ca5;
+            font-weight: 600;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        h2:hover {
+            color: #f28b30;
+            transform: translateX(5px);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            font-weight: 700;
+            color: #f28b30;
+            animation: pop 1.2s ease;
+        }
+
+        /* Container principal */
+        .container {
+            max-width: 900px;
+            background: #ffffffcc;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+            padding: 30px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            animation: fadeIn 1.2s ease;
+        }
+
+        /* Imagens */
+        img {
+            border-radius: 12px;
+            border: 3px solid #3a7ca5;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.06);
+            box-shadow: 0 0 15px rgba(58, 124, 165, 0.3);
+        }
+
+        li {
+            list-style: none;
+            margin-bottom: 6px;
+        }
+
+        .table th {
+            background-color: #e3edf3;
+        }
+
+        .section {
+            animation: fadeIn 1.3s ease;
+        }
+
+        hr {
+            margin-bottom: 25px;
+        }
+
+        /* Caixa de citação */
+        .quote-box {
+            background: #e9f3f8;
+            border-left: 6px solid #3a7ca5;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-style: italic;
+            color: #444;
+            margin-top: 10px;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 30px;
+            margin-top: -20px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Título -->
+        <h1>Quem eu sou??</h1>
+        <hr>
+
+        <!-- Apresentação -->
+        <p>Olá! Meu nome é <strong>Fernando Oliveira de Souza</strong>, sou estudante do IFRN cursando informática, atualmente na turma <strong>INFO1M</strong>.
+        Sou do município de <strong>Serrinha-RN</strong> e moro em um pequeno sítio chamado <em>Góis</em>. No meu tempo livre, gosto de praticar exercícios e
+        passear pelo meu sítio, observando os detalhes que o lugar tem a oferecer. Uma curiosidade sobre mim é que eu sei montar um cubo mágico em cerca de
+        <strong>1 minuto e 30 segundos</strong> — e estou sempre tentando melhorar esse tempo!</p>
+
+        <div class="text-center my-3">
+            <img src="imagens/foto.jpg" width="160" alt="Foto de Fernando">
+        </div>
+
+        <!-- Minha rotina -->
+        <div class="section">
+            <h2>Minha rotina</h2>
+            <p>Durante a semana, estudo no IFRN e gosto de manter uma rotina equilibrada entre estudo e treino.  
+            Depois das aulas, costumo treinar na academia e ouvir música para relaxar.  
+            Nos fins de semana, descanso no sítio, curto a natureza e passo tempo com minha família.</p>
+        </div>
+
+        <!-- Meus lugares preferidos -->
+        <div class="section">
+            <h2>Meus lugares preferidos</h2>
+            <p>Um dos meus lugares favoritos é o sítio onde moro. Gosto de observar o pôr do sol, o canto dos pássaros e o silêncio da natureza.  
+            É o meu cantinho de paz, onde sempre encontro tranquilidade e me sinto em casa.</p>
+        </div>
+
+        <!-- Qualidades -->
+        <div class="section">
+            <h2>Minhas qualidades e o que quero melhorar</h2>
+            <p>Sou uma pessoa dedicada e calma, gosto de ajudar os outros e sempre busco fazer tudo com capricho.  
+            Tenho facilidade para aprender e adoro me desafiar.  
+            O que quero melhorar é minha confiança para falar em público — estou trabalhando nisso!</p>
+        </div>
+
+        <!-- Frase inspiradora -->
+        <div class="section">
+            <h2>Uma frase que me inspira</h2>
+            <div class="quote-box">
+                “O esforço de hoje é o resultado de amanhã.”
+            </div>
+        </div>
+
+        <!-- Sites que gosto -->
+        <div class="section">
+            <h2>Sites que eu gosto de acessar</h2>
+            <ul class="d-flex justify-content-start gap-3 flex-wrap">
+                <li><a href="https://www.youtube.com" target="_blank"><img src="imagens/yt.png" width="80" alt="YouTube"></a></li>
+                <li><a href="https://www.whatsapp.com" target="_blank"><img src="imagens/whatsapp.jfif" width="80" alt="WhatsApp"></a></li>
+                <li><a href="https://www.spotify.com" target="_blank"><img src="imagens/spotify.png" width="80" alt="Spotify"></a></li>
+            </ul>
+        </div>
+
+        <!-- O que eu gosto -->
+        <div class="section">
+            <h2>O que eu gosto e por quê</h2>
+            <table class="table table-bordered">
+                <tr>
+                    <th>Coisas que eu gosto</th>
+                    <th>Por que eu gosto</th>
+                </tr>
+                <tr>
+                    <td>Se exercitar</td>
+                    <td>Porque faz bem à saúde e me dá energia</td>
+                </tr>
+                <tr>
+                    <td>Jogar jogos online</td>
+                    <td>Porque me divirto com amigos e passo o tempo</td>
+                </tr>
+                <tr>
+                    <td>Cozinhar</td>
+                    <td>Porque adoro experimentar novos sabores</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        Feito por Fernando — 2025
+    </footer>
+
+</body>
+</html>
